@@ -269,7 +269,7 @@ void msm_restart(char mode, const char *cmd)
 
 	if (cmd != NULL) {
 		if (!strncmp(cmd, "bootloader", 10)) {
-			__raw_writel(0x77665500, restart_reason);
+			__raw_writel(0x6C616664, restart_reason);
 		} else if (!strncmp(cmd, "recovery", 8)) {
 			__raw_writel(0x77665502, restart_reason);
 			/* FOTA : Add restart reason */
