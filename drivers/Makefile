@@ -151,3 +151,6 @@ obj-$(CONFIG_LGE_BROADCAST_TDMB) += broadcast/
 
 #FeliCa
 obj-$(CONFIG_LGE_FELICA) 	+= felica/
+
+#sensor_class
+obj-$(CONFIG_SENSORS)		+= sensors/

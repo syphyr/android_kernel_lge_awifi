@@ -156,4 +156,6 @@ source "drivers/broadcast/Kconfig"
 
 source "drivers/felica/Kconfig"
 
+source "drivers/sensors/Kconfig"
+
 endmenu
