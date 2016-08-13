@@ -674,7 +674,7 @@ static int mddi_reg_read(int ndx)
 
 	if (base == NULL) {
 		printk(KERN_INFO "%s: base offset is not set properly. \
-			Please check if MDDI enables correctly\n", __func__);
+			Please check if MDDI is enabled correctly\n", __func__);
 		return -EFAULT;
 	}
 
