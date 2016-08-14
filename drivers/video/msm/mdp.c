@@ -2542,6 +2542,8 @@ static int mdp_on(struct platform_device *pdev)
 	}
 
 #ifdef CONFIG_MACH_LGE
+	ret = panel_next_low_power_config(pdev, false);
+
 	mdp_pipe_ctrl(MDP_CMD_BLOCK, MDP_BLOCK_POWER_ON, FALSE);
 
 	ret = panel_next_on(pdev);
